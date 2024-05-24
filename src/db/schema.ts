@@ -28,4 +28,17 @@ export const ReservationTable = pgTable(
     })
 );
 
+export const RoomInfoTable = pgTable(
+    "RoomInfo",
+    {
+        id: serial("id").primaryKey(),
+        RoomId: varchar("roomId").notNull(),
+        content: varchar("content").notNull(),
+    },
+    (table) => ({
+        RoomIdIndex: index("RoomIdIndex").on(table.RoomId)
+    })
+
+);
+
 //email, name, time, which room, date
