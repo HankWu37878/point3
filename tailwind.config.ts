@@ -20,6 +20,9 @@ const config: Config = {
     extend: {
       colors: {
         brand: "#1e9bf0",
+        column1: "#3c392f",
+        column2: "#5b3e31",
+        column3: '#a9bbab',
       },
       fontFamily: {
         sans: ["var(--noto-sans)", ...defaultTheme.fontFamily.sans],
@@ -35,8 +38,13 @@ const config: Config = {
         },
       },
       animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
+        "accordion-down": "accordion-down 1s ease-out",
+        "accordion-up": "accordion-up 1s ease-out",
+        'pulse-short': 'pulse 1s ease-in 1'
+      },
+      backgroundImage: {
+        "homepage": "url('/Homepage.png')",
+        "reservationpage": "url('/Reservationpage.png')",
       },
     },
   },

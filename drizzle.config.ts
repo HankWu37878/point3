@@ -8,11 +8,9 @@ if (!process.env.POSTGRES_URL) {
   throw new Error("POSTGRES_URL must be defined in .env.local");
 }
 
-const config: Config = {
+export default{
   schema: "./src/db/schema.ts",
   out: "./drizzle",
-  dialect: "postgresql",
-  dbCredentials: { url: process.env.POSTGRES_URL },
-};
-
-export default config;
+  driver: "pg",
+  dbCredentials: { connectionString: process.env.POSTGRES_URL},
+}satisfies Config;
