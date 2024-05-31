@@ -1,16 +1,17 @@
-import BottomBar from "./_components/BottomBar";
-
 export default async function Home() {
   return (
-  <div className="overflow-scroll">
-    <div className="bg-homepage min-h-screen w-screen text-xl flex justify-center items-center">
-      <div className="bg-black bg-opacity-20 flex-col text-center px-16 py-8 animate-pulse-short delay-300">
-        <h1 className="text-yellow-500 lg:text-7xl text-4xl font-bold font-serif">0.3 MUSIC CENTER</h1>
-        <p className="text-white lg:text-4xl text-lg font-serif mt-16">100台北市中正區忠孝西路一段7號1樓</p>
-        <p className="text-white lg:text-4xl text-lg font-serif">(02)2383 1780</p>
+    <div className="overflow-scroll">
+      <div className="bg-homepage min-h-screen w-screen text-xl flex justify-center items-center">
+        <div className="bg-black bg-opacity-50 flex-col text-center px-16 py-8 rounded-lg">
+          <div className="text-[#FFE900] lg:text-7xl text-4xl font-bold m-10">
+            0.3 MUSIC CENTER
+          </div>
+          <p className="text-white lg:text-2xl text-base mt-10 m-2">
+            台北市中正區忠孝西路一段7號1樓
+          </p>
+          <p className="text-white lg:text-2xl text-base m-2">(02)2383 1780</p>
+        </div>
       </div>
     </div>
-    <BottomBar/>
-  </div>
-  )
+  );
 }

@@ -22,7 +22,7 @@ const config: Config = {
         brand: "#1e9bf0",
         column1: "#3c392f",
         column2: "#5b3e31",
-        column3: '#a9bbab',
+        column3: "#a9bbab",
       },
       fontFamily: {
         sans: ["var(--noto-sans)", ...defaultTheme.fontFamily.sans],
@@ -40,11 +40,11 @@ const config: Config = {
       animation: {
         "accordion-down": "accordion-down 1s ease-out",
         "accordion-up": "accordion-up 1s ease-out",
-        'pulse-short': 'pulse 1s ease-in 1'
+        "pulse-short": "pulse 1s ease-in 1",
       },
       backgroundImage: {
-        "homepage": "url('/Homepage.png')",
-        "reservationpage": "url('/Reservationpage.png')",
+        homepage: "url('/Homepage.png')",
+        reservationpage: "url('/drum.png')",
       },
     },
   },
