@@ -45,7 +45,7 @@ export const RoomInfoTable = pgTable(
         RoomId: varchar("roomId").notNull(),
         roomName: varchar("roomName").notNull(),
         content: varchar("content").notNull(),
-        roomPic: varchar("roomPic"),
+        roomImage: varchar("roomPic"),
     },
     (table) => ({
         RoomIdIndex: index("RoomIdIndex").on(table.RoomId)
